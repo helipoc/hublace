@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link
+      href="https://fonts.googleapis.com/css?family=Barlow&display=swap"
+      rel="stylesheet"
+    />
+    <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+    <script src="map.js"></script>
+    <script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?key=AIzaSyClDuwQpvUcAW4LGWZXwSOWeXifnXr4mfc&libraries=places"></script>
+    <link rel="stylesheet" href="style.css" />
+    <title>Places api + hubspot api</title>
+  </head>
+  <body>
+    <div id="container">
+      <div class="address-search">
+        <input type="text" id="search" autocomplete="off" required>
+        <button id="se" onclick="rm();api();">Search</button>
+      </form>
+      <div id="map" style="visibility: hidden; height: 0px; width:0px; position:absolute;"></div>
+    </div>
+  </body>
+</html>

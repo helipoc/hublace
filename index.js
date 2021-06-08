@@ -17,7 +17,7 @@ app.post("/hubspot", (req, res) => {
   var options = {
     method: "POST",
     url: "https://api.hubapi.com/contacts/v1/contact/",
-    qs: { hapikey: "e7d66b1e-2e93-4499-a1ab-723517b4578c" },
+    qs: { hapikey: process.env.API_KEY },
     headers: {
       "Content-Type": "application/json"
     },
